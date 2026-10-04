@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "te-kore-untimed-engine"
+version = "0.1.0"
+description = "Experimental architecture for carrying and verifying meaningful state through causal relationships without requiring timestamps or a shared clock as part of the semantic state model."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    {name = "teamo213"}
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
